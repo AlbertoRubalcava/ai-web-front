@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: sans-serif; 
+  }
+
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    height: 35px;
+    margin-right: 10px;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-dropdown {
+    position: relative;
+    margin-right: 100px;
+  }
+  
+  .navbar-more-tools {
+    padding: 20px 15px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: none;
+    height:100%;
+    outline:none;
+    font-family: sans-serif;
+    font-size: .941rem;
+  }
+  .navbar-more-tools:focus{
+    outline:none;
+  }
+
+  .navbar-more-tools.dropdown-active {
+    background-color: #eaeaea;
+    border:none;
+  }
+  
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    height:4rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc; 
+    z-index: 100;
+    box-shadow: 0px 0px 10px 1px rgb(59, 59, 59);
+  }
+  .navbar-div{
+    margin:0;
+    margin-left:0;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 3.4rem; 
+    left: 0; 
+    background-color: #eaeaea; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    list-style: none;
+    padding: 5px 0; 
+    margin: 0; 
+    z-index: 1000; 
+    width: 200px; 
+    font-family:sans-serif;
+    font-size: .941rem;
+  }
+  
+  .dropdown-menu li {
+    padding: 0;
+  }
+  
+  .dropdown-link {
+    display: block;
+    padding: 9px 15px; 
+    text-decoration: none; 
+    color: #333;
+  }
+  
+  .dropdown-link:hover {
+    background-color: #eaeaea;
+    color: #2685bf; 
+  }
+  
+  .navbar-more-tools {
+    position: relative;
+  }
+
+  .dropdown-icon {
+    height:.7vh;
+    width:1.5vh;
+    color:#d22030;
+    margin-left: 10px;
+  }
+  
+  
+  .navbar-profile-icon {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+  }

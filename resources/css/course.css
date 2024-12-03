@@ -1,0 +1,230 @@
+
+:root {
+    font-family: sans-serif;
+    
+    /* Font Sizes */
+    --main-heading: 2.5rem;
+    --year-heading: 1.75rem;
+    
+    /* Font Weights */
+    --font-normal: 400;
+    --font-bold: 700;
+    
+    /* Primary Colors */
+    --csun-hero-red: #d22030;
+    --csun-white: #ffffff;
+    --black: #000000;
+  
+    /* Secondary Colors */
+    --secondary-red: #e35205;
+    --cool-grey: #6d6e71;
+    --medium-grey: #a6a6a9;
+    --light-grey: #c5c6c8;
+  
+    /* Tertiary Colors */
+    --golden-yellow: #fdbf58;
+    --sea-green: #20c9b9;
+    --azure: #00a3e0;
+    --periwinkle: #a2b5e1;
+    --sustainable-campus-green: #007a33;
+    --tertiary-burgundy: #8a1c1c;
+    --csun-library-beige: #d6d2d4;
+    --iris: #5b4a93;
+    
+    /* Non-CSUN Palette Colors */
+    --lightest-grey: #eaeaea;
+  }
+  
+  p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+  
+  p:not(first-child) {
+    margin-top: 1rem;
+  }
+  
+  p:not(last-child) {
+    margin-bottom: 1rem;
+  }
+  
+  
+  /**
+   * Main Nav Tabs
+   *
+   * @since 1.0.0
+   */
+   .hero-section {
+    width: 100%;
+    height: 17rem; 
+    overflow: hidden;
+    position: relative; 
+    padding-top:2.8rem;
+}
+
+.hero-image {
+    width: 100%; 
+    height: auto; 
+    position: absolute; 
+    top: -31rem; 
+    left: 0; 
+    filter: brightness(50%); 
+    object-fit: cover; 
+}
+  .nav-tabs {
+    background: var(--lightest-grey);
+    border-bottom: 3px solid var(--light-grey);
+    display: flex;
+    justify-content: center;
+    padding: .75rem 1rem;
+  }
+  
+  .nav-tabs__list {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    list-style: none;
+  }
+  
+  .nav-tabs__link {
+    color: var(--black);
+    display: inline-block;
+    font-weight: var(--font-bold);
+    padding: .5rem 1rem .5rem;
+    text-decoration: none;
+  }
+  
+  .nav-tabs__link:hover {
+    border-bottom: 3px solid var(--black);
+  }
+  
+  .nav-tabs__link--active {
+    border-bottom: 3px solid var(--csun-hero-red);
+  }
+  
+  /**
+   * Main Roadmap Content
+   *
+   * @since 1.0.0
+   */
+  
+  .roadmap {
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 960px;
+  }
+  
+  .roadmap__header {
+    padding: 1rem 0;
+  }
+  
+  .roadmap__heading {
+    color: var(--csun-hero-red);
+    font-size: var(--main-heading);
+    font-weight: var(--font-bold);
+  }
+  
+  .roadmap__grid {
+    border: 3px solid var(--light-grey);
+    display: grid;
+    gap: 5rem 1.5rem;
+    padding: 1.5rem;
+  }
+  
+  .roadmap__year {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+  }
+  
+  .roadmap__year-heading {
+    color: var(--black);
+    grid-column: 1 / -1;
+    font-size: var(--year-heading);
+    font-weight: var(--font-bold);
+    text-transform: uppercase;
+  }
+  
+  .roadmap__semester-heading {
+    color: var(--csun-hero-red);
+    font-weight: var(--font-bold);
+    margin-bottom: 1rem;
+  }
+  
+  @media screen and (min-width: 720px) { 
+      .roadmap__year {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /**
+   * Roadmap Courses Table
+   *
+   * @since 1.0.0
+   */
+  
+  .roadmap__courses {
+    border-collapse: collapse;
+    font-size: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  
+  .roadmap__courses-body {
+    background-color: var(--csun-white);
+  }
+  
+  .roadmap__courses-cell {
+    border-bottom: 1px solid var(--light-grey);
+    padding: 0.75rem;
+  }
+  
+  .roadmap__courses-footer {
+    font-weight: var(--font-bold);
+  }
+  
+  .roadmap__courses-header,
+  .roadmap__courses-footer {
+    background-color: var(--light-grey);
+  }
+  
+  .roadmap__courses-heading {
+    border-bottom: 2px solid var(--medium-grey);
+    font-weight: var(--font-bold);
+    padding: 0.75rem;
+    text-align: left;
+  }
+  
+  .roadmap__courses-total {
+    padding: 0.75rem;
+    text-align: left;
+  }
+  
+  
+  /**
+   * Print Syles
+   *
+   * @since 1.0.0
+   */
+  @media print {
+    .nav-tabs {
+      display: none;
+    }
+    
+    .roadmap__grid {
+      border: none;
+      gap: .75in 0;
+      padding: 0;
+    }
+    
+    .roadmap__year:not(:first-of-type) {
+      page-break-before: always;
+    }
+    
+    .roadmap__courses-heading,
+    .roadmap__courses-cell,
+    .roadmap__courses-total {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
