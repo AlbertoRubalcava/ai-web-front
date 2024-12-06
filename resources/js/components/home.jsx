@@ -1,6 +1,6 @@
 import React from 'react';
 import Library from '/public/images/Library.jpg';
-import Navbar from './navbar';
+import Navbar from './Navbar';
 import { useNavigate } from 'react-router-dom';
 
 

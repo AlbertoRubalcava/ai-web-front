@@ -1,4 +1,4 @@
-import Navbar from './navbar';
+import Navbar from './Navbar';
 import Library from '/public/images/Library.jpg';
 
 const Course = () => {
