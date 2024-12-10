@@ -10,9 +10,11 @@ import ReactDOM from 'react-dom/client';
 import Course from './components/courses';
 import Home from './components/home';
 
+const basename = import.meta.env.VITE_BASENAME || '';
+
 const App = () => {
     return (
-        <Router>
+        <Router basename={basename}>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/recommendation" element={<Course />} />
