@@ -12,12 +12,13 @@ import Home from './components/home';
 
 const App = () => {
     return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/recommendation" element={<Course />} />
-            </Routes>
-        </Router>
+        // <Router>
+        //     <Routes>
+        //         <Route path="/" element={<Home />} />
+        //         <Route path="/recommendation" element={<Course />} />
+        //     </Routes>
+        // </Router>
+        <div>Server Test</div>
     );
 };
 
