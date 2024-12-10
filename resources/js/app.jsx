@@ -15,7 +15,7 @@ const Course = () => <div>Course Component</div>;
 
 const App = () => {
     return (
-        <Router>
+        <Router basename="/ai-course">
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/recommendation" element={<Course />} />
