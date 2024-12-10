@@ -7,18 +7,20 @@ import '../css/navbar.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';        
-import Course from './components/courses';
-import Home from './components/home';
+// import Course from './components/courses';
+// import Home from './components/home';
+
+const Home = () => <div>Home Component</div>;
+const Course = () => <div>Course Component</div>;
 
 const App = () => {
     return (
-        // <Router>
-        //     <Routes>
-        //         <Route path="/" element={<Home />} />
-        //         <Route path="/recommendation" element={<Course />} />
-        //     </Routes>
-        // </Router>
-        <div>Server Test</div>
+        <Router>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/recommendation" element={<Course />} />
+            </Routes>
+        </Router>
     );
 };
 
