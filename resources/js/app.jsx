@@ -12,7 +12,7 @@ import Home from './components/home';
 
 const App = () => {
     return (
-        <Router basename="/ai-course">
+        <Router>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/recommendation" element={<Course />} />
