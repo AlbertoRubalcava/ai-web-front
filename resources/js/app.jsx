@@ -1,5 +1,4 @@
 import './bootstrap';
-import './components/Example';
 import '../css/course.css';
 import '../css/home.css';
 import '../css/navbar.css';

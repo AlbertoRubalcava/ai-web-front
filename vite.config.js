@@ -7,6 +7,9 @@ export default defineConfig({
         laravel({
             input: [
                 'resources/js/app.jsx',
+                'resources/js/components/home.jsx',
+                'resources/js/components/courses.jsx',
+                'resources/js/components/navbar.jsx',
             ],
             refresh: true,
         }),
