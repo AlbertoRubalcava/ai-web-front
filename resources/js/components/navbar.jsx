@@ -4,6 +4,7 @@ import { useButton } from '@react-aria/button';
 import { useOverlay } from '@react-aria/overlays';
 import Up from '/public/images/Up.png';
 import Down from '/public/images/Down.png';
+import '../../css/navbar.css';
 
 
 const Navbar = () => {
@@ -38,7 +39,6 @@ const Navbar = () => {
   );
 
   return (
-    <div className="">
     <nav className="navbar">
       <div className="navbar-left">
         <img
@@ -124,7 +124,6 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-    </div>
   );
 };
 

@@ -1,10 +1,9 @@
-import Navbar from './navbar';
 import Library from '/public/images/Library.jpg';
+import '../../css/course.css';
 
 const Course = () => {
     return (
-        <div>
-            <Navbar />
+        <>
             <div className="hero-section">
                 <img src={Library} alt="Library" className="hero-image" />
                 <div className="welcome-text">
@@ -416,7 +415,7 @@ const Course = () => {
                 </div>
             </div>
         </article>
-        </div>
+        </>
     );
 };
 

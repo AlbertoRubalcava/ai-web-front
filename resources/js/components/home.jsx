@@ -1,7 +1,7 @@
 import React from 'react';
 import Library from '/public/images/Library.jpg';
-import Navbar from './navbar';
 import { useNavigate } from 'react-router-dom';
+import '../../css/home.css';
 
 
 const Home = () => {
@@ -11,8 +11,7 @@ const Home = () => {
         navigate('/recommendation'); 
     };
     return (
-        <div>
-            <Navbar />
+        <>
             <div className="hero-section">
                 <img src={Library} alt="Library" className="hero-image" />
                 <div className="welcome-text">
@@ -42,7 +41,7 @@ const Home = () => {
                     </p>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 
