@@ -12,7 +12,7 @@
 
         <!-- Styles / Scripts -->
         @viteReactRefresh
-        @vite(['resources/js/app.jsx'])
+        @vite(['resources/js/App.jsx'])
             
     </head>
     <body>
