@@ -1,5 +1,5 @@
 import React from 'react';
-import Library from '/public/images/Library.jpg';
+import Library from '../../images/Library.jpg';
 import { useNavigate } from 'react-router-dom';
 import '../../css/home.css';
 

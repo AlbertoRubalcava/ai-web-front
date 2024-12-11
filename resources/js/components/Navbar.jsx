@@ -2,8 +2,9 @@ import React, { useState, useRef } from 'react';
 import { useOverlayTriggerState } from '@react-stately/overlays';
 import { useButton } from '@react-aria/button';
 import { useOverlay } from '@react-aria/overlays';
-import Up from '/public/images/Up.png';
-import Down from '/public/images/Down.png';
+import Up from '../../images/Up.png';
+import Down from '../../images/Down.png';
+import CSUNLogo from '../../images/CSUNLogo.png'
 import '../../css/navbar.css';
 
 
@@ -42,7 +43,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-left">
         <img
-          src="/images/CSUNLogo.png" alt="CSUN Logo"
+          src={CSUNLogo} alt="CSUN Logo"
           className="navbar-logo"
         />
       </div>

@@ -1,4 +1,4 @@
-import Library from '/public/images/Library.jpg';
+import Library from '../../images/Library.jpg';
 import '../../css/course.css';
 
 const Course = () => {
