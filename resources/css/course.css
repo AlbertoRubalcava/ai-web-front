@@ -99,7 +99,7 @@
   }
   
   .nav-tabs__link--active {
-    border-bottom: 3px solid var(--csun-hero-red);
+    border-bottom: 3px solid var(--csun-hero-red) !important;
   }
   
   /**
