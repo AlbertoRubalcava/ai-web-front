@@ -2,10 +2,10 @@ import React, { useState, useRef } from 'react';
 import { useOverlayTriggerState } from '@react-stately/overlays';
 import { useButton } from '@react-aria/button';
 import { useOverlay } from '@react-aria/overlays';
-import Up from '../../images/Up.png';
-import Down from '../../images/Down.png';
-import CSUNLogo from '../../images/CSUNLogo.png'
-import '../../css/navbar.css';
+import Up from '/resources/images/Up.png';
+import Down from '/resources/images/Down.png';
+import CSUNLogo from '/resources/images/CSUNLogo.png'
+import '/resources/css/navbar.css';
 
 
 const Navbar = () => {

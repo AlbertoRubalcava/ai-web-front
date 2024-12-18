@@ -1,5 +1,5 @@
-import Library from '../../images/Library.jpg';
-import '../../css/course.css'; 
+import Library from '/resources/images/Library.jpg';
+import '/resources/css/course.css'; 
 import React, { useState } from 'react';
 import {Button} from 'react-aria-components';
 
