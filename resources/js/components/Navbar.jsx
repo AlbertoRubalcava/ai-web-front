@@ -7,8 +7,8 @@ import Down from '/resources/images/Down.png';
 import CSUNLogo from '/resources/images/CSUNLogo.png'
 import '/resources/css/navbar.css';
 
-const baseUrl = import.meta.env.APP_URL || '';
-
+const baseUrl = import.meta.env.VITE_APP_URL || '';
+console.log(baseUrl);
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef();
