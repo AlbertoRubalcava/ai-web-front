@@ -3,6 +3,12 @@ import '/resources/css/course.css';
 import React, { useState } from 'react';
 import {Button} from 'react-aria-components';
 
+var baseUrl = '';
+
+if(import.meta.env.VITE_APP_ENV === 'production'){
+  baseUrl = import.meta.env.VITE_APP_URL || '';
+}
+
 // Roadmap data -- This will be the API Output -- update to a json file for testing?
 const roadmaps = [
     {
@@ -91,7 +97,7 @@ const Course = () => {
     return (
         <>
             <div className="hero-section">
-                <img src={Library} alt="Library" className="hero-image" />
+                <img src={baseUrl+Library} alt="Library" className="hero-image" />
                 <div className="welcome-text">
                     <h1>Welcome, [Name]!</h1>
                     <p>Plan your degree and take a step towards your success.</p>

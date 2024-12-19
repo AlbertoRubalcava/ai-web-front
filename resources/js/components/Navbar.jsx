@@ -7,8 +7,12 @@ import Down from '/resources/images/Down.png';
 import CSUNLogo from '/resources/images/CSUNLogo.png'
 import '/resources/css/navbar.css';
 
-const baseUrl = import.meta.env.VITE_APP_URL || '';
-console.log(baseUrl);
+var baseUrl = '';
+
+if(import.meta.env.VITE_APP_ENV === 'production'){
+  baseUrl = import.meta.env.VITE_APP_URL || '';
+}
+
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef();
@@ -59,7 +63,7 @@ const Navbar = () => {
           >
             Academic Tools
             <img
-              src={isDropdownOpen ? Up : Down} 
+              src={isDropdownOpen ? baseUrl + Up : baseUrl + Down} 
               alt={isDropdownOpen ? "Up Arrow" : "Down Arrow"}
               className="dropdown-icon"
             />
