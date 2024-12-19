@@ -44,7 +44,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-left">
         <img
-          src={base_url + CSUNLogo} alt="CSUN Logo"
+          src={base_url + 'ai-course/'+CSUNLogo} alt="CSUN Logo"
           className="navbar-logo"
         />
       </div>
