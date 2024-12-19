@@ -7,7 +7,7 @@ import Down from '/resources/images/Down.png';
 import CSUNLogo from '/resources/images/CSUNLogo.png'
 import '/resources/css/navbar.css';
 
-const base_url = window.location.origin;
+const baseUrl = import.meta.env.APP_URL || '';
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -44,7 +44,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-left">
         <img
-          src={base_url + '/ai-course'+CSUNLogo} alt="CSUN Logo"
+          src={baseUrl + CSUNLogo} alt="CSUN Logo"
           className="navbar-logo"
         />
       </div>
