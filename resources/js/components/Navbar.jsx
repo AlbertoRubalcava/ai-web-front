@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useOverlayTriggerState } from '@react-stately/overlays';
 import { useButton } from '@react-aria/button';
 import { useOverlay } from '@react-aria/overlays';
@@ -44,13 +45,21 @@ const Navbar = () => {
     dropdownRef
   );
 
+  const navigate = useNavigate();
+
+  const generateClick = () => {
+      navigate('/');
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-left">
+        <button className='home-button'onClick={generateClick}> 
         <img
           src={baseUrl + CSUNLogo} alt="CSUN Logo"
           className="navbar-logo"
         />
+        </button>
       </div>
       <div className="navbar-right">
         <div className="navbar-dropdown">

@@ -2,6 +2,7 @@ import Library from '/resources/images/Library.jpg';
 import '/resources/css/course.css'; 
 import React, { useState } from 'react';
 import {Button} from 'react-aria-components';
+import { useLocation } from 'react-router-dom';
 
 var baseUrl = '';
 
@@ -94,6 +95,9 @@ const Course = () => {
         setSelectedRoadmap(index);
     };
 
+    const location = useLocation();
+    const { selectedSemester } = location.state || {};
+
     return (
         <>
             <div className="hero-section">
@@ -102,7 +106,8 @@ const Course = () => {
                     <h1>Welcome, [Name]!</h1>
                     <p>Plan your degree and take a step towards your success.</p>
                     <p><strong>Major:</strong> [Mathematics]</p>
-                    <p><strong>Graduation Year:</strong> [2026]</p>
+                    <p><strong>GPA:</strong> [3.6]</p>
+                    <p><strong>Desired Graduation Semester:</strong> {selectedSemester}</p>
                 </div>
             </div>
             <article>

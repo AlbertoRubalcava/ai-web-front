@@ -113,3 +113,10 @@ body {
     height: 35px;
     display: inline-block;
   }
+
+  .navbar-left button {
+    background: none; /* No background */
+    border: none; /* No border */
+    padding: 0; /* No padding */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+  }

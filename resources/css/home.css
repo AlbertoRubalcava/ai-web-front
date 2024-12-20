@@ -12,7 +12,7 @@
     position: absolute; 
     top: -31rem; 
     left: 0; 
-    filter: brightness(50%); 
+    filter: brightness(40%); 
     object-fit: cover; 
 }
 
@@ -111,4 +111,14 @@
   
   .disclaimer-link:hover {
     color: #2685bf; 
+  }
+
+  .errormessage{
+    color:red;
+    font-size: .75rem;
+    margin-top: -20px;
+    margin-bottom: 16px;
+    display: block; /* Ensure it appears as a separate line */
+    text-align: left; /* Align it with the dropdown */
+    margin-left: 25%; /* Match the label's alignment */
   }
