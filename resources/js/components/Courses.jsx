@@ -136,14 +136,18 @@ const Course = () => {
  
     return (
         <>
-            <div className="hero-section">
-                <img src={baseUrl + Library} alt="Library" className="hero-image" />
-                <div className="welcome-text">
-                    <h1>Welcome, [Name]!</h1>
-                    <p>Plan your degree and take a step towards your success.</p>
-                    <p><strong>Major:</strong> [Mathematics]</p>
-                    <p><strong>GPA:</strong> [3.6]</p>
-                    <p><strong>Desired Graduation Semester:</strong> {selectedSemester}</p>
+            <div className="container">
+                <div className="row hero-section">
+                    <div className="col-12">
+                        <img src={baseUrl + Library} alt="Library" className="hero-image" />
+                        <div className="welcome-text">
+                            <h1>Welcome, [Name]!</h1>
+                            <p>Plan your degree and take a step towards your success.</p>
+                            <p><strong>Major:</strong> [Mathematics]</p>
+                            <p><strong>GPA:</strong> [3.6]</p>
+                            <p><strong>Desired Graduation Semester:</strong> {selectedSemester}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <article>
