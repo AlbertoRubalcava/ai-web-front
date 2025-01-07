@@ -95,7 +95,8 @@ object-fit: cover;
 }
 
 .nav-tabs__link:hover {
-  border-bottom: 3px solid var(--black);
+  border-bottom: 3px solid var(--black) !important;
+  cursor: pointer;
 }
 
 .nav-tabs__link--active {
