@@ -54,7 +54,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <button className='home-button'onClick={generateClick}> 
+        <button className='home-button' onClick={generateClick}> 
         <img
           src={baseUrl + CSUNLogo} alt="CSUN Logo"
           className="navbar-logo"
