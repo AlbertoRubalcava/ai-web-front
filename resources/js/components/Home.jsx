@@ -51,6 +51,7 @@ const Home = () => {
                         <select
                             id="graduation-semester"
                             value={selectedSemester}
+                            className="form-select"
                             onChange={handleDropdownChange}
                         >
                             <option value="">Select</option>
