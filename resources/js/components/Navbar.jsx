@@ -54,7 +54,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <button className='home-button'onClick={generateClick}> 
+        <button className='home-button' onClick={generateClick}> 
         <img
           src={baseUrl + CSUNLogo} alt="CSUN Logo"
           className="navbar-logo"
@@ -66,16 +66,16 @@ const Navbar = () => {
           <button
             {...buttonProps}
             ref={buttonRef}
-            className={`navbar-more-tools ${
-                isDropdownOpen ? 'dropdown-active' : ''
-              }`}
+            className={`navbar-more-tools ${isDropdownOpen ? 'dropdown-active' : ''}`}
           >
-            Academic Tools
-            <img
-              src={isDropdownOpen ? baseUrl + Up : baseUrl + Down} 
-              alt={isDropdownOpen ? "Up Arrow" : "Down Arrow"}
-              className="dropdown-icon"
-            />
+            <span>
+              Academic Tools
+              <img
+                src={isDropdownOpen ? baseUrl + Up : baseUrl + Down}
+                alt={isDropdownOpen ? "Up Arrow" : "Down Arrow"}
+                className="dropdown-icon"
+              />
+            </span>
           </button>
           {state.isOpen && (
             <ul
