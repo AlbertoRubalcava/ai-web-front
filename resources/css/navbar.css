@@ -16,13 +16,14 @@ body {
   }
   
   .navbar-right {
-    display: flex;
     align-items: center;
+    color:black;
   }
   
   .navbar-dropdown {
     position: relative;
-    margin-right: 100px;
+    margin-right: 5vh;
+    color:black;
   }
   
   .navbar-more-tools {
