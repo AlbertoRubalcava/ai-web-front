@@ -79,6 +79,7 @@
     border-radius: 3px;
     margin-bottom: 25px;
     outline:none;
+    font-family: "Montserrat", sans-serif;
     cursor: pointer;
 }
 .form-select {
@@ -91,6 +92,7 @@
     text-align: center;
     background-color: #d22030; 
     color: white; 
+    font-family: "Montserrat", sans-serif;
     padding: 15px 20px; 
     border: none; 
     font-size: 1rem; 
@@ -106,6 +108,7 @@
     margin-top: 2rem; 
     font-size: 0.8rem; 
     color: #555; 
+    font-family: "Montserrat", sans-serif;
 }
 .disclaimer-link {
     display: inline;
@@ -123,6 +126,7 @@
     font-size: .75rem;
     margin-top: -20px;
     margin-bottom: 16px;
+    font-family: "Montserrat", sans-serif;
     display: block;
     text-align: center;
   }
