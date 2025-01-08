@@ -157,7 +157,7 @@ const Course = () => {
                             <li key={index}>
                                 <Button
                                     className={`nav-tabs__link ${selectedRoadmap === index && !compareMode ? 'nav-tabs__link--active' : ''}`}
-                                    onClick={() => handleTabChange(index)}
+                                    onPress={() => handleTabChange(index)}
                                     style={{ border: 'none', background: 'none' }}
                                 >
                                     {roadmap.name}
@@ -167,7 +167,7 @@ const Course = () => {
                         <li>
                             <Button
                                 className={`nav-tabs__link ${compareMode ? 'nav-tabs__link--active' : ''}`}
-                                onClick={() => setCompareMode(true)}
+                                onPress={() => setCompareMode(true)}
                                 style={{ border: 'none', background: 'none' }}
                             >
                                 Compare

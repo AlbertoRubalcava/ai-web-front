@@ -48,6 +48,7 @@ body {
 
   .navbar-more-tools span {
     padding: 1.3rem 15px; /* Move padding to the inner content */
+    color:black;
   }
 
   .navbar-more-tools.dropdown-active {
@@ -115,13 +116,6 @@ body {
     width:1.5vh;
     color:#d22030;
     margin-left: 10px;
-  }
-  
-  
-  .navbar-profile-icon {
-    width: 35px;
-    height: 35px;
-    display: inline-block;
   }
 
   .navbar-left button {
