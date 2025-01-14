@@ -123,3 +123,11 @@ body {
     padding: 0; 
     cursor: pointer; 
   }
+
+  @media (max-width: 768px) {
+    .navbar-dropdown {
+      position: relative;
+      margin-right: 2.5rem;
+      color:black;
+    }
+}
