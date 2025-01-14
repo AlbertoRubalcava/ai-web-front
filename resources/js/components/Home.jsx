@@ -66,7 +66,7 @@ const Home = () => {
                             <span className="errormessage">{errorMessage}</span>
                         )}
                         <button className="generate-button" onClick={generateClick}>
-                            Generate my Roadmap
+                            Generate my roadmap
                         </button>
                         <p className="disclaimer">*This software uses
                             <a href="https://www.csun.edu/it/academic-technology/artificial-intelligence-ai"
