@@ -24,7 +24,7 @@ body {
   
   .navbar-dropdown {
     position: relative;
-    margin-right: 5vh;
+    margin-right: 3.8rem;
     color:black;
   }
   
@@ -49,13 +49,12 @@ body {
   }
 
   .navbar-more-tools span {
-    padding: 1.3rem 15px; /* Move padding to the inner content */
+    padding: 1.3rem 15px; 
     color:black;
   }
 
   .navbar-more-tools.dropdown-active {
     background-color: #eaeaea;
-
     height: 100%;
   }
   
@@ -112,15 +111,15 @@ body {
   }
 
   .dropdown-icon {
-    height:.7vh;
-    width:1.5vh;
+    height:.9rem;
+    width:1rem;
     color:#d22030;
     margin-left: 10px;
   }
 
   .navbar-left button {
-    background: none; /* No background */
-    border: none; /* No border */
-    padding: 0; /* No padding */
-    cursor: pointer; /* Change cursor to indicate it's clickable */
+    background: none; 
+    border: none; 
+    padding: 0; 
+    cursor: pointer; 
   }

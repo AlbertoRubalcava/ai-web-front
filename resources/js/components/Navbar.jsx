@@ -3,8 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useOverlayTriggerState } from '@react-stately/overlays';
 import { useButton } from '@react-aria/button';
 import { useOverlay } from '@react-aria/overlays';
-import Up from '/resources/images/Up.png';
-import Down from '/resources/images/Down.png';
+import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import CSUNLogo from '/resources/images/CSUNLogo.png'
 import '/resources/css/navbar.css';
 
@@ -70,11 +69,11 @@ const Navbar = () => {
           >
             <span>
               Academic Tools
-              <img
-                src={isDropdownOpen ? baseUrl + Up : baseUrl + Down}
-                alt={isDropdownOpen ? "Up Arrow" : "Down Arrow"}
-                className="dropdown-icon"
-              />
+              {isDropdownOpen ? (
+                <FaChevronUp className="dropdown-icon" />
+              ) : (
+                <FaChevronDown className="dropdown-icon" />
+              )}
             </span>
           </button>
           {state.isOpen && (
