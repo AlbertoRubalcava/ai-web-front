@@ -115,13 +115,13 @@ p:not(last-child) {
 .roadmap__grid {
   border: 3px solid var(--light-grey);
   display: grid;
-  gap: 5rem 1.5rem;
+  gap: 2rem 1.5rem;
   padding: 1.5rem;
 }
 
 .roadmap__year {
   display: grid;
-  gap: 1.5rem;
+  column-gap: 1.5rem;
   grid-template-columns: 1fr;
 }
 
@@ -132,12 +132,15 @@ p:not(last-child) {
   font-weight: var(--font-bold);
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
+  padding-top:1rem;
+  margin:0;
 }
 
 .roadmap__semester-heading {
   color: var(--csun-hero-red);
   font-weight: var(--font-bold);
   font-family: "Montserrat", sans-serif;
+  margin-top: .8rem;
   margin-bottom: 1rem;
 }
 
@@ -147,12 +150,6 @@ p:not(last-child) {
   }
 }
 
-
-/**
- * Roadmap Courses Table
- *
- * @since 1.0.0
- */
 
 .roadmap__courses {
   border-collapse: collapse;
@@ -195,11 +192,6 @@ p:not(last-child) {
 }
 
 
-/**
- * Print Syles
- *
- * @since 1.0.0
- */
 @media print {
   .nav-tabs {
     display: none;

@@ -20,7 +20,7 @@ const roadmaps = [
                 year: 1,
                 semesters: [
                     {
-                        name: 'Fall',
+                        name: 'Fall 2025',
                         courses: [
                             { name: 'Course 1', units: 3 },
                             { name: 'Course 2', units: 3 },
@@ -30,7 +30,7 @@ const roadmaps = [
                         ],
                     },
                     {
-                        name: 'Spring',
+                        name: 'Spring 2026',
                         courses: [
                             { name: 'Course 1', units: 3 },
                             { name: 'Course 2', units: 3 },
@@ -45,7 +45,7 @@ const roadmaps = [
                 year: 2,
                 semesters: [
                     {
-                        name: 'Fall',
+                        name: 'Fall 2026',
                         courses: [
                             { name: 'Course 1', units: 3 },
                             { name: 'Course 2', units: 3 },
@@ -55,7 +55,7 @@ const roadmaps = [
                         ],
                     },
                     {
-                        name: 'Spring',
+                        name: 'Spring 2027',
                         courses: [
                             { name: 'Course 1', units: 3 },
                             { name: 'Course 2', units: 3 },
@@ -76,14 +76,14 @@ const roadmaps = [
                 year: 1,
                 semesters: [
                     {
-                        name: 'Fall',
+                        name: 'Fall 2025',
                         courses: [
-                            { name: 'Course A', units: 3 },
-                            { name: 'Course B', units: 3 },
+                            { name: 'Course X', units: 3 },
+                            { name: 'Course Y', units: 3 },
                         ],
                     },
                     {
-                        name: 'Spring',
+                        name: 'Spring 2026',
                         courses: [
                             { name: 'Course C', units: 4 },
                             { name: 'Course D', units: 3 },
@@ -101,10 +101,17 @@ const roadmaps = [
                 year: 1,
                 semesters: [
                     {
-                        name: 'Fall',
+                        name: 'Fall 2025',
                         courses: [
                             { name: 'Course X', units: 3 },
                             { name: 'Course Y', units: 4 },
+                        ],
+                    },
+                    {
+                        name: 'Spring 2026',
+                        courses: [
+                            { name: 'Course C', units: 4 },
+                            { name: 'Course D', units: 3 },
                         ],
                     },
                 ],
@@ -180,7 +187,7 @@ const Course = () => {
                     <div className="roadmap">
                         <header className="roadmap__header">
                             <h1 className="roadmap__heading">{roadmaps[selectedRoadmap].name}</h1>
-                            <p>{roadmaps[selectedRoadmap].students} students have taken a similar roadmap.</p>
+                            <p>{roadmaps[selectedRoadmap].students} students have completed a similar roadmap.</p>
                         </header>
  
                         <div className="roadmap__grid">
