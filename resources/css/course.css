@@ -280,6 +280,19 @@ font-family: "Montserrat", sans-serif;
 margin-bottom: 1rem;
 }
 
+.comparing-mobile{
+  display: none;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  25% { opacity: 1; }
+  75% { opacity: 1; }
+}
+.comparison-message.fade-in-out {
+  animation: fadeInOut 3.5s ease-in-out;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .compare-roadmaps__grid {
@@ -298,5 +311,11 @@ margin-bottom: 1rem;
   .nav-tabs__link {
     padding: .5rem .5rem .5rem;
   }
-
+  .comparing-mobile{
+    display:block;
+    color:#007a33;
+    font-weight: 500;
+    margin-top:-10px;
+    font-size: .85rem;
+  }
 }

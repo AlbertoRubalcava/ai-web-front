@@ -124,6 +124,7 @@ const Course = () => {
     const [selectedRoadmap, setSelectedRoadmap] = useState(0); // Track active roadmap
     const [compareMode, setCompareMode] = useState(false); // Track if compare mode is active
     const [compareRoadmaps, setCompareRoadmaps] = useState([0, 1]); // Indices of roadmaps to compare
+    const [isComparingVisible, setIsComparingVisible] = useState(false);
  
     const handleTabChange = (index) => {
         setSelectedRoadmap(index);
@@ -136,6 +137,8 @@ const Course = () => {
             updated[index] = value;
             return updated;
         });
+        setIsComparingVisible(true);
+        setTimeout(() => setIsComparingVisible(false), 3500);
     };
  
     const location = useLocation();
@@ -251,6 +254,13 @@ const Course = () => {
                                     </select>
                                 ))}
                             </div>
+                            {isComparingVisible && (
+                                <div className={`comparison-message fade-in-out`}>
+                                    <p className="comparing-mobile">
+                                        Comparing {roadmaps[compareRoadmaps[0]].name} and {roadmaps[compareRoadmaps[1]].name}
+                                    </p>
+                                </div>
+                            )}
                             <div className="compare-roadmaps__grid">
                                 {compareRoadmaps.map((roadmapIndex, index) => (
                                     <section key={index} className="compare-roadmaps__column">
