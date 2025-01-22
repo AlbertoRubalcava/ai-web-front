@@ -284,6 +284,12 @@ margin-bottom: 1rem;
   display: none;
 }
 
+select option:disabled {
+  color: black;
+  background-color: #dddcdc;
+  cursor: not-allowed;
+}
+
 @keyframes fadeInOut {
   0%, 100% { opacity: 0; }
   25% { opacity: 1; }

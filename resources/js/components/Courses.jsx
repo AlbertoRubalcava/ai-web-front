@@ -135,6 +135,11 @@ const Course = () => {
         setCompareRoadmaps((prev) => {
             const updated = [...prev];
             updated[index] = value;
+    
+            if (updated[0] === updated[1]) {
+                updated[1 - index] = prev[1 - index]; 
+            }
+    
             return updated;
         });
         setIsComparingVisible(true);
@@ -246,10 +251,10 @@ const Course = () => {
                                         value={selected}
                                         onChange={(e) => handleCompareRoadmapChange(index, parseInt(e.target.value))}
                                     >
-                                        {roadmaps.map((roadmap, roadmapIndex) => (
-                                            <option key={roadmapIndex} value={roadmapIndex}>
-                                                {roadmap.name}
-                                            </option>
+                                    {roadmaps.map((roadmap, roadmapIndex) => (
+                                        <option key={roadmapIndex} value={roadmapIndex} disabled={roadmapIndex === compareRoadmaps[1 - index]}>
+                                            {roadmap.name}
+                                        </option>
                                         ))}
                                     </select>
                                 ))}
