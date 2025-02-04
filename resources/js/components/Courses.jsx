@@ -13,7 +13,7 @@ if(import.meta.env.VITE_APP_ENV === 'production'){
 // Roadmap data -- This will be the API Output -- update to a json file for testing?
 const roadmaps = [
     {
-        name: 'Roadmap 1',
+        name: 'Road Map 1',
         students: 137,
         years: [
             {
@@ -69,7 +69,7 @@ const roadmaps = [
         ],
     },
     {
-        name: 'Roadmap 2',
+        name: 'Road Map 2',
         students: 90,
         years: [
             {
@@ -94,7 +94,7 @@ const roadmaps = [
         ],
     },
     {
-        name: 'Roadmap 3',
+        name: 'Road Map 3',
         students: 45,
         years: [
             {
@@ -222,7 +222,7 @@ const Course = () => {
                 <h1 className="roadmap__heading">{roadmaps[selectedRoadmap].name}</h1>
                 <p>
                   {roadmaps[selectedRoadmap].students} students have completed a
-                  similar roadmap.
+                  similar road map.
                 </p>
               </header>
   
@@ -293,8 +293,8 @@ const Course = () => {
           ) : (
             <div className="compare-roadmaps">
                 <header className="compare-roadmaps__header">
-                    <h1 className="compare-roadmaps__heading">Compare Roadmaps</h1>
-                    <p>Select two roadmaps to compare:</p>
+                    <h1 className="compare-roadmaps__heading">Compare Road Maps</h1>
+                    <p>Select two road maps to compare:</p>
                 </header>
                 <div className="compare-roadmaps__selectors">
                     {compareRoadmaps.map((selected, index) => (

@@ -52,7 +52,7 @@ const Home = () => {
       <div className="row home-box">
         <div className="col-12">
           <div className="course-roadmap">
-            <h2>Course Roadmap Recommendation</h2>
+            <h2>AI Road Map Recommendation</h2>
             <label htmlFor="graduation-semester">
               Desired Graduation Semester{' '}
               <span className="required-field" id="red" aria-hidden="true">*</span>
@@ -89,7 +89,7 @@ const Home = () => {
               onClick={generateClick}
               aria-label="Generate my roadmap based on the selected graduation semester"
             >
-              Generate my roadmap
+              Generate my road map
             </button>
             <p className="disclaimer">
               *This software uses{' '}
